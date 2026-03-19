@@ -83,6 +83,7 @@ export default function MemoList({
                     <div className="border-b-2 border-zinc-200 pt-2 mt-2 pb-2 mb-2">
                         {editingId === memo.id ? (
                             <textarea
+                                autoFocus
                                 onKeyDown={(e) => {
                                     if (
                                         e.key === 'Enter' &&
